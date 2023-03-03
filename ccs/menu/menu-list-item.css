@@ -1,0 +1,8 @@
+.menu__list__item {
+    padding-right: 1rem;
+    font-family: 'Raleway';
+}
+
+.menu__list__item--contacto {
+    font-weight: bold;
+}
