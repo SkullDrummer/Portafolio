@@ -46,7 +46,7 @@ a {
     color: var(--cor-de-link);
 }
 
-button{
+button {
     background-color: transparent;
     text-decoration: none;
     padding-top: 2rem;
@@ -107,7 +107,7 @@ button{
     z-index: -1;
 }
 
-.btn{
+.btn {
     position: relative;
     padding: 20px 8px;
     text-decoration: none;
@@ -122,17 +122,17 @@ button{
 
 /*-----------boton 2----------*/
 
-.btn-2{
+.btn-2 {
     border: 3px solid;
 }
 
-.btn-2:hover{
+.btn-2:hover {
     background-color: black;
     box-shadow: 0 0 20px #2459d9;
     border-color: #2459d9;
 }
 
-.btn-2 span:nth-child(n){
+.btn-2 span:nth-child(n) {
     position: absolute;
     width: 10px;
     height: 10px;
@@ -140,28 +140,28 @@ button{
     transition: all 0.6s ease;
 }
 
-.btn-2 span:nth-child(1){
+.btn-2 span:nth-child(1) {
     right: 10%;
     top: -10px;
     background-color: #fff;
 }
 
-.btn-2 span:nth-child(2){
+.btn-2 span:nth-child(2) {
     left: 10%;
     bottom: -10px;
     background-color: #000000;
 
 }
 
-.btn-2:hover span:nth-child(1){
+.btn-2:hover span:nth-child(1) {
     right: 80%;
     transform: rotate(90deg);
     color: #2459d9;
     background-color: #2459d9;
-    
+
 }
 
-.btn-2:hover span:nth-child(2){
+.btn-2:hover span:nth-child(2) {
     left: 80%;
     transform: rotate(90deg);
     color: #2459d9;
@@ -189,18 +189,20 @@ https://en.bem.info/methodology/quick-start/*/
 /*Sección Hobbies*/
 /* Experiencia Académica*/
 /* experiencia*/
-.experience__repo{
-    border: none;
-}
-.experience__demo{
+.experience__repo {
     border: none;
 }
 
-.experience__title{
+.experience__demo {
+    border: none;
+}
+
+.experience__title {
     padding-left: 0.2rem;
     padding-bottom: 0.3rem;
     font-size: 22px;
 }
+
 /*Contacto*/
 
 
@@ -238,11 +240,20 @@ https://en.bem.info/methodology/quick-start/*/
 .formcontato__input {
     margin-top: 1rem;
     padding: 0.3rem;
+    border-radius: 2%;
+    background-color: #000000;
+    border-color: #2459d9;
+    color: #fff;
+    box-shadow: 0 0 20px #2459d9;
 }
 
 .formcontato__textarea {
     margin-top: 1rem;
-
+    border-radius: 2%;
+    background-color: #000000;
+    border-color: #2459d9;
+    color: #fff;
+    box-shadow: 0 0 20px #2459d9;
 }
 
 .formcontato__form {
@@ -262,7 +273,7 @@ https://en.bem.info/methodology/quick-start/*/
     justify-content: center;
 }
 
-.footer__rodape{
+.footer__rodape {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -273,7 +284,7 @@ https://en.bem.info/methodology/quick-start/*/
 Utiliza las referencias de los breakpoints @media abajo */
 
 /*Tablet*/
-@media screen and (max-width:768px) {
+@media screen and (max-width:1024px) {
 
     .menu__list__item {
         font-size: 0;
@@ -375,8 +386,7 @@ Utiliza las referencias de los breakpoints @media abajo */
         padding-bottom: 25px;
     }
 
-    div.academic__courses {
-    }
+    div.academic__courses {}
 
     div.academic__courses__box {
         margin: 0 auto;
@@ -429,11 +439,82 @@ Utiliza las referencias de los breakpoints @media abajo */
     }
 }
 
+/*Moble*/
+@media screen and (max-width:575px) {
 
-/*@media screen and (min-width:0) {
-        .cabecera{
-            padding: 0 1rem;
-            justify-content: center;
-        }
-        
-    }*/
+    #particles-js {
+        width: 100%;
+
+    }
+
+    section.menu {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    h3.menu__title {
+        font-size: 15px;
+        padding-top: 0.2rem;
+    }
+
+    ul.menu__list {}
+
+    li.menu__list__item {
+        display: none;
+    }
+
+    li.menu__list__item2 {
+        font-size: 15px;
+
+    }
+
+
+    div.title__div {
+        flex-direction: column;
+    }
+
+    img.title__profile {
+        order: 0;
+        width: 98px;
+        height: 98px;
+    }
+
+    div.title__container {
+        margin-right: 10rem;
+    }
+
+
+    div.about__container {
+        margin: 0 auto;
+    }
+
+
+    div.skills__box {
+        width: 150px;
+        height: 150px;
+    }
+
+    div.hobbies__box {
+        width: 150px;
+        height: 150px;
+    }
+
+
+
+
+    div.academic__courses {
+        flex-direction: column
+    }
+
+    ul.academic__courses__list {}
+
+    li.academic__courses__item__img {
+        padding: 3rem;
+    }
+
+    button {
+        padding-top: 2.5rem;
+        padding-bottom: 1.2rem;
+    }
+
+}
